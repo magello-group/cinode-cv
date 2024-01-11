@@ -36,12 +36,15 @@ body {
     margin-right: 70px;
     margin-top: 20px;
     text-align: right;
-    transform: rotate(-1deg);
+    transform: rotate(-1.5deg);
 }
 
 .page-heading .user-info h1 {
     color: #ffffff;
     font-family: "kattux-abc";
+}
+.page-heading .user-info .title {
+    color: #ffffff;
 }
 
 
