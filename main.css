@@ -122,8 +122,68 @@ h2 {
             0 50%);
 }
 
+.skill-by-level__skill {
+    background-color: #F7F4F5;
+    border: 1px solid #F7F4F5;
+    border-radius: 0;
+    color: #000;
+    font-size: 12px;
+    -webkit-clip-path: polygon(3.25% 0%,
+            96.75% 1%,
+            100% 38%,
+            99% 94%,
+            74.5% 100%,
+            0.25% 91%,
+            0 50%);
+    clip-path: polygon(3.25% 0%,
+            96.75% 1%,
+            100% 38%,
+            99% 94%,
+            74.5% 100%,
+            0.25% 91%,
+            0 50%);
+}
+
+
 .row-two-columns.even {
     background: transparent;
+}
+
+.skill-by-level__stroke {
+    -webkit-clip-path: polygon(3.25% 0%,
+            96.75% 1%,
+            100% 38%,
+            99% 94%,
+            74.5% 100%,
+            0.25% 91%,
+            0 50%);
+    clip-path: polygon(3.25% 0%,
+            96.75% 1%,
+            100% 38%,
+            99% 94%,
+            74.5% 100%,
+            0.25% 91%,
+            0 50%);
+    background: var(--CvPrimaryColor, #198ce0);
+    display: inline-block;
+    height: 40px;
+    line-height: 30px;
+    padding: 2px;
+    width: 40px;
+}
+
+.skill-by-level__stroke {
+    border-radius: 0;
+    font-family: "kattux-abc";
+}
+.skill-by-level__stroke__inner-circle {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    font-size: 20px;
+    height: 100%;
+    text-align: center;
 }
 
 /****** kattux-abc *******/
