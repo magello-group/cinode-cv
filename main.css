@@ -1,4 +1,18 @@
 /*
+
+Magello styling for CVs in Cinode.
+
+Paste this CSS-file straigt into Cinode / Administration / CV-mallar
+
+You will need Admin privileges to be able to do this.
+
+Inage and fonts are added using data direct here in this file.
+
+Source: https://github.com/magello-group/cinode-cv
+
+ */
+
+/*
  The PDF-view uses pages.
  */
  .pageA4 {
