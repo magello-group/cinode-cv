@@ -1,11 +1,27 @@
-.pageA4 {
-    background-image: url("data:image/svg+xml,%3Csvg width='307' height='3457' viewBox='0 0 307 3457' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M47.5 41.5L0 0L8.97635 3457H62.7469L215.645 3078.8L307 2514.52L273.673 1719.24L191.131 615.055L47.5 41.5Z' fill='%23F7F4F5'/%3E%3Cpath d='M145.382 2779.01L100.043 2791.42L90 2838.38L104.842 2891.55L169.75 2905.28L200.764 2880.25L205.859 2816.82L172.999 2782.63L145.382 2779.01Z' fill='%23EC008C'/%3E%3Cpath d='M137.481 2807.81L104.399 2842.74L134.601 2849.01L143.167 2881.13L178.39 2847.09L180.827 2815.34L137.481 2807.81Z' fill='white'/%3E%3C/svg%3E%0A");
+/*
+ The PDF-view uses pages.
+ */
+ .pageA4 {
+    background-image: url("data:image/svg+xml,%3Csvg width='307' height='3457' viewBox='0 0 307 3457' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M47.5 41.5L0 0L8.97635 3457H62.7469L215.645 3078.8L307 2514.52L273.673 1719.24L191.131 615.055L47.5 41.5Z' fill='%23F7F4F5'/%3E%3C/svg%3E%0A");
     background-repeat: no-repeat;
     background-position: -15px 20px;
     background-size: 16% 100%;
 }
 
+.pageA4 header {
+    background-image: url("data:image/svg+xml,%3Csvg width='116' height='127' viewBox='0 0 116 127' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M55.3821 0.00976562L10.0426 12.4154L0 59.3794L14.8424 112.546L79.7502 126.281L110.764 101.248L115.859 37.8173L82.9993 3.62806L55.3821 0.00976562Z' fill='%23EC008C'/%3E%3Cpath d='M47.481 28.8086L14.3994 63.7362L44.6011 70.0129L53.1669 102.135L88.3899 68.093L90.8267 36.3406L47.481 28.8086Z' fill='white'/%3E%3C/svg%3E%0A");
+    background-position: calc(100% - 30px) 30px;
+    background-repeat: no-repeat;
+    background-size: 60px; 
+}
 
+img.header-logo {
+    display: none;
+}
+
+/*
+
+*/
 body {
     font-family: "roboto";
     color: #000;
@@ -89,7 +105,10 @@ body {
 h2 {
     font-family: "kattux-abc";
     border: none;
-    color: var(--CvH2Color)
+    color: var(--CvH2Color);
+    background-color: transparent;
+    text-shadow: 0px 0px 4px #fff;
+    box-shadow: none;
 }
 
 .work-experience h2 {
@@ -146,9 +165,13 @@ h2 {
 
 
 .row-two-columns.even {
-    background: transparent;
+    background-color: #fff;
+    transform: rotate(0.3deg);
 }
-
+.row-two-columns.odd {
+    background-color: #F2ECEE;
+    transform: rotate(-0.3deg);
+}
 .skill-by-level__stroke {
     -webkit-clip-path: polygon(3.25% 0%,
             96.75% 1%,
@@ -186,7 +209,10 @@ h2 {
     text-align: center;
 }
 
-/****** kattux-abc *******/
+/* 
+ This is the Magello Kattux-abc.woff typeface Base64 encoded.
+ Kattux is used for headings.
+*/
 
 @font-face {
     font-family: 'kattux-abc'; /*This is what your font will be named*/
@@ -196,7 +222,9 @@ h2 {
 }
 
 
-/****** roboto *******/
+/*
+ Roboto is Magellos default typeface.
+*/
 
 /* cyrillic-ext */
 @font-face {
