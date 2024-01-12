@@ -8,6 +8,9 @@
     background-size: 16% 100%;
 }
 
+/*
+ For subpages, only show the Magello O, not the logotype. 
+*/
 .pageA4 header {
     background-image: url("data:image/svg+xml,%3Csvg width='116' height='127' viewBox='0 0 116 127' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M55.3821 0.00976562L10.0426 12.4154L0 59.3794L14.8424 112.546L79.7502 126.281L110.764 101.248L115.859 37.8173L82.9993 3.62806L55.3821 0.00976562Z' fill='%23EC008C'/%3E%3Cpath d='M47.481 28.8086L14.3994 63.7362L44.6011 70.0129L53.1669 102.135L88.3899 68.093L90.8267 36.3406L47.481 28.8086Z' fill='white'/%3E%3C/svg%3E%0A");
     background-position: calc(100% - 30px) 30px;
@@ -15,6 +18,9 @@
     background-size: 60px; 
 }
 
+/*
+ For subpages, only show the Magello O, not the logotype. 
+*/
 img.header-logo {
     display: none;
 }
