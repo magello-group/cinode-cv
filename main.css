@@ -159,6 +159,20 @@ body {
     padding-left: 150px;
 }
 
+.presentation-description a {
+    display: flex;
+    align-items: center;
+    color: #009EE3;
+}
+
+.presentation-description a::before {
+    content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --%3E%3Csvg height='1rem' width='1rem' version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 461.001 461.001' xml:space='preserve'%3E%3Cg%3E%3Cpath style='fill:%23F61C0D;' d='M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728 c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137 C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607 c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z'/%3E%3C/g%3E%3C/svg%3E");
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 5px;
+}
+
 h2 {
     font-family: "kattux-abc";
     border: none;
@@ -199,8 +213,8 @@ h2 {
 }
 
 .skill-by-level__skill {
-    background-color: #F7F4F5;
-    border: 1px solid #F7F4F5;
+    background-color: #F2ECEE;
+    border: 1px solid #F2ECEE;
     border-radius: 0;
     color: #000;
     font-size: 12px;
@@ -220,6 +234,25 @@ h2 {
             0 50%);
 }
 
+.skill-by-level.skill-by-level--5 .skill-by-level__stroke,
+.skill-by-level.skill-by-level--4 .skill-by-level__stroke,
+.skill-by-level.skill-by-level--3 .skill-by-level__stroke,
+.skill-by-level.skill-by-level--2 .skill-by-level__stroke,
+.skill-by-level.skill-by-level--1 .skill-by-level__stroke {
+    display: none;
+}
+
+.skill-by-level.skill-by-level--5 h4,
+.skill-by-level.skill-by-level--4 h4,
+.skill-by-level.skill-by-level--3 h4,
+.skill-by-level.skill-by-level--2 h4,
+.skill-by-level.skill-by-level--1 h4 {
+    display: none;
+}
+
+.skill-by-level__skills {
+    display: block;
+}
 
 .row-two-columns.even {
     background-color: #fff;
